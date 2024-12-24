@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2EBE2"
+    android:padding="16dp"
+    tools:context=".KotlinActivity">
+
+    <TextView
+        android:id="@+id/courseDescriptionText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Kotlin Programming for Android\n"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0A5710"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Course Details -->
+    <TextView
+        android:id="@+id/courseDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="In this course, you will learn Kotlin, one of the most popular programming languages for Android development.\nWe will cover:
+\nKey topics include:\nKotlin syntax and fundamentals.\nUsing Kotlin for Android UI development.\nAndroid's Kotlin extensions and coroutines.\nBuilding apps with Kotlin and modern Android architectures.\nBy the end of this course, you'll be able to create native Android apps using Kotlin with confidence."
+        android:textSize="16sp"
+        android:textColor="#616161"
+        android:lineSpacingExtra="6dp"
+        app:layout_constraintTop_toBottomOf="@id/courseDescriptionText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bookTitle"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Recommended Books Section -->
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Recommended Books"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0A5710"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/courseDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/bookList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="- Kotlin Programming: The Big Nerd Ranch Guide by Josh Skeen and David Greenhalgh\nKotlin in Action by Dmitry Jemerov and Svetlana Isakova\nAndroid Programming with Kotlin for Beginners by John Horton\nHead First Kotlin by Dawn Griffiths\n"
+        android:textSize="16sp"
+        android:textColor="#616161"
+        android:lineSpacingExtra="6dp"
+        app:layout_constraintTop_toBottomOf="@id/bookTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/youtubeLink"
+        android:layout_marginBottom="24dp" />
+
+    <!-- YouTube Playlist Link -->
+    <TextView
+        android:id="@+id/youtubeLink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Watch the Kotlin Development Playlist"
+        android:textSize="16sp"
+        android:textColor="#14877D"
+        app:layout_constraintTop_toBottomOf="@id/bookList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColorLink="#1E88E5"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Back to Courses"
+        android:textSize="16sp"
+        android:background="@drawable/background_button_1"
+        android:textColor="#FFF"
+        app:layout_constraintTop_toBottomOf="@id/youtubeLink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

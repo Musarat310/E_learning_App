@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3DFEB"
+    android:padding="16dp"
+    tools:context=".JavaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <!-- Course Title -->
+        <TextView
+            android:id="@+id/courseDescriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developing in Android Studio with Java"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#0A685E"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Course Details -->
+        <TextView
+            android:id="@+id/courseDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This course covers everything you need to know about developing Android applications using Java and Android Studio.\n
+Key topics include:\n
+- Activity lifecycle management.\n
+- Building intuitive UI using XML layouts.\n
+- Managing data using SQLite and Room databases.\n
+- Networking using Retrofit and Volley.\n
+- Debugging and publishing your apps.\n
+By the end of this course, you'll be able to create fully functional Android apps that are both efficient and user-friendly."
+            android:textSize="16sp"
+            android:textColor="#616161"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Recommended Books Section -->
+        <TextView
+            android:id="@+id/bookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommended Books\n"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#0A685E"
+            />
+
+        <TextView
+            android:id="@+id/bookList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Head First Android Development by Dawn Griffiths and David Griffiths\n
+- Android Programming: The Big Nerd Ranch Guide by Bill Phillips and Chris Stewart\n
+- Effective Java by Joshua Bloch\n
+- Clean Code by Robert C. Martin\n
+- Android Design Patterns by Greg Nudelman"
+            android:textSize="16sp"
+            android:textColor="#616161"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/youtubeLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Watch the Android Development Playlist"
+            android:textSize="16sp"
+            android:textColor="#1E88E5"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:textColorLink="#1E88E5" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Courses"
+            android:textSize="16sp"
+            android:background="@drawable/background_button_1"
+            android:textColor="#FFF"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

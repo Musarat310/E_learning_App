@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6CFCF"
+    tools:context=".takeTestActivity">
+
+    <TextView
+        android:id="@+id/question1Text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1. What is Android Studio used for?"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"/>
+    <RadioGroup
+        android:id="@+id/question1Group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/question1Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/q1_answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Build Android apps"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/q1_answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Design websites"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/q1_answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play games"
+            android:textSize="14sp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/question2Text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2. Which language is used for Android app development?"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        app:layout_constraintTop_toBottomOf="@id/question1Group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/question2Group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/question2Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/q2_answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/q2_answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/q2_answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JavaScript"
+            android:textSize="14sp" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/background_button_1"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/question2Group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Result Display -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Your score: 0/3"
+        android:textSize="18sp"
+        android:textColor="#212121"
+        app:layout_constraintTop_toBottomOf="@id/submitButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button_1"
+        android:text="Back "
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:layout_width="298dp"
+        android:layout_height="238dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/test" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
